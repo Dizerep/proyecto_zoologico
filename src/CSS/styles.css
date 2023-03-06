@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Aqui empieza vista inicio */
+body {
+    background-color: blanchedalmond;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: right;
+    background-color: brown;
+    color: rgb(255, 197, 197);
+    font-size: 25px;
+}
+
+h2{
+    color: #000;
+}
+
+span{
+    color: rgb(33, 125, 24);
+}
+
+header h2 {
+    color: rgb(44, 34, 0);
+    font-size: 30px;
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+.imagen_header{
+    width: 120px;
+    height: 120px;
+}
+
+.imagen_slider{
+    width: 100vw; /* Ancho */ 
+/*     height: 300px;  /* Alto */ 
+}
+
+.title_section_2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(50, 117, 42);
+}
+
+.tittle_section_3 {
+    margin-top: 30px;
+}
+
+.text_section_3{
+    /* width: ; */
+}
+
+.tittle_section_3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(50, 117, 42);
+}
+
+.text_section_2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Box Model*/
+
+.Zoo-de-Tunja {
+    background-color: rgb(30, 226, 226);
+    width: 600px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+
+.Horarios-especiales {
+    background-color: rgb(159, 230, 186);
+    width: 600px;
+    padding: 30px;
+    margin: 0 auto
+}
+
+
+/* Display inline y block */
+
+/* Globales */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+/* Header y Navegacion */
+
+.nombre-sitio {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+
+.lista-nav {
+    padding: 20 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-nav {
+    border-color: #000;
+    border-top-style: solid;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Aqui empieza vista Zoo */
+
+.imagen_zoo_Tunja2{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    display:block
+}
+
+.imagen_Horarios3{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    display:block
+}
+
+.imagen_section_1_zoo{
+    width: 100vw;
+}
+
+.text_zoo_section1{
+    text-align: center;
+    color: rgb(24, 24, 152);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.leon_zoo_section1{
+    width: 1000px;
+    height: 500px;
+}
+
+
+/* Aqui empieza vista Servicios */
+
+.titulo-categoria-servicios{
+    text-align: center;
+}
+
+.introduccion-servicios{
+    padding: 30px;
+}
+
+
+.section-1-servicios{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Imagen-mamiferos{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+
+.mamiferos{
+    padding: 10px;
+}
+
+
+.section-2-servicios{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Imagen-reptiles{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+
+.Reptiles{
+    padding: 10px;
+}
+
+
+.section-3-servicios{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Imagen-domesticos{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+}
+
+
+.texto-domesticos{
+    margin: 10px;
+}
+
+.section-4-servicios{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Imagen-aves{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+}
+
+.Aves{
+    padding: 10px;
+}
+
+
+/* Categorias */
+.Listado-categorias{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
+
+.Secciones-principal{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+}
