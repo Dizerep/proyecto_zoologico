@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/styles.css" />
     <!--Para trabajar CSS luego de tener el HTML, se debe enlazar la hoja de estilos al HTML de esta manera, colocando la ruta ./css/archivo.css -->
     <title>Pagina para Zoologico</title>
@@ -13,38 +15,36 @@
     <!-- ETIQUETA HEADER DE LA WEB DENTRO CONTIENE LA BARRA DE NAVEGACION Y EL TITULO H1 -->
 
     <header>
-      <h1 class="nombre-sitio">🐼Zoologico de Tunja🐵</h1>
+      <div class="container-titulo d-flex justify-content-center align-items-center justify-content-md-end">
+        <h1 class="nombre-sitio">🐼Zoologico de Tunja🐵</h1>
+      </div>
       <!-- BARRA DE NAVEGACION -->
 
-      <div>
-        <h2>Zoo<span>Bear</span></h2>
-
+      <div class="d-flex flex-column-reverse align-items-center">
+        <h2 class="title-zoobear">Zoo<span>Bear</span></h2>
         <img
           class="imagen_header"
           src="Img/oso de anteojos.png"
-          alt="Oso de anteojos"
+          alt="logo_oso_de_anteojos"
         />
       </div>
 
-      <div class="contenedor-navegacion">
-        <nav>
-          <ul class="lista-nav contenedor">
-            <li>
-              <a href="./index.html">INICIO </a>
-            </li>
-            <li>
-              <a href="./zoo.html">ZOO </a>
-            </li>
-            <li>
-              <a href="./servicios.html">SERVICIOS </a>
-            </li>
-            <li>
-              <a href="#">NOTICIAS </a>
-            </li>
-            <li>
-              <a href="#">CONTACTO </a>
-            </li>
-          </ul>
+      <div >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="./index.html">INICIO</a>
+                <a class="nav-link" href="./zoo.html">ZOO</a>
+                <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                <a class="nav-link" href="#">NOTICIAS</a>
+                <a class="nav-link" href="#">CONTACTO</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -54,17 +54,22 @@
       <!-- PARTE SUPERIOR GALERIA -->
       <section class="section_1_zoo">
         <img
-          class="imagen_section_1_zoo"
+          class="imagen_section_1_zoo img-fluid"
           src="./Img/Zoo_imagen.png"
           alt="imagen zoo"
         />
-        <p class="text_zoo_section1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis
-          aut nam, consequuntur ullam exercitationem obcaecati distinctio
-          architecto repellendus placeat, modi ex error neque eveniet at? Nemo
-          praesentium excepturi assumenda.
-        </p>
-        <iframe
+        <div class="p-4 title-text-gallery">
+          <h2 class="text-center">El Zoológico de Tunja: un tesoro natural que necesita nuestro apoyo</h2>
+          <p>
+            El Zoológico de Tunja es uno de los tesoros más preciados de la ciudad, no solo por su belleza natural y la fascinación que despierta en los visitantes, sino también por su invaluable papel en la conservación de la fauna y la educación ambiental. Este oasis verde es hogar de una gran variedad de especies, muchas de las cuales están en peligro de extinción, por lo que el zoológico tiene un papel vital en la protección y preservación de la biodiversidad de la región.
+          </p>
+          <p>
+            Sin embargo, el Zoológico de Tunja enfrenta desafíos importantes para continuar su labor de conservación y educación. En un mundo cada vez más urbanizado y desconectado de la naturaleza, es fácil olvidar la importancia de proteger nuestro entorno y todas las especies que lo habitan. Pero el zoológico nos recuerda la necesidad de ser conscientes de nuestra relación con la naturaleza y la importancia de protegerla para las generaciones futuras.
+          </p>
+
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+          <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/Xv-PElbaGR8"
@@ -73,67 +78,82 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        </div>
       </section>
 
       <!-- CUADRICULA IMAGENES -->
-      <section class="section_zoo_1">
-        <div>
+      <section class="section_zoo_1 row">
+        <p class="text-center fs-2">GALERIA</p>
+        <div class="col-12 col-md-6 col-lg-4">
           <img
-            class="leon_zoo_section1"
+            class="img-gallery img-fluid"
             src="./Img/leon-servicios.jpg"
             alt=""
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
-
-        <div>
-          <img src="./Img/gallery.jpg" alt="" />
+        <div class="col-12 col-md-6 col-lg-4">
+          <img
+            class="img-gallery img-fluid"
+            src="./Img/leon-servicios.jpg"
+            alt=""
+          />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
-
-        <div>
-          <img src="./Img/gallery.jpg" alt="" />
+        <div class="col-12 col-md-6 col-lg-4">
+          <img
+            class="img-gallery img-fluid"
+            src="./Img/leon-servicios.jpg"
+            alt=""
+          />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
-
-        <div>
-          <img src="./Img/gallery.jpg" alt="" />
+        <div class="col-12 col-md-6 col-lg-4">
+          <img
+            class="img-gallery img-fluid"
+            src="./Img/leon-servicios.jpg"
+            alt=""
+          />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
-
-        <div>
-          <img src="./Img/gallery.jpg" alt="" />
+        <div class="col-12 col-md-6 col-lg-4">
+          <img
+            class="img-gallery img-fluid"
+            src="./Img/leon-servicios.jpg"
+            alt=""
+          />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
-
-        <div>
-          <img src="./Img/gallery.jpg" alt="" />
+        <div class="col-12 col-md-6 col-lg-4">
+          <img
+            class="img-gallery img-fluid"
+            src="./Img/leon-servicios.jpg"
+            alt=""
+          />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab
-            alias nostrum cum dolorem ratione officia.
+            Lorem ipsum dolor.
           </p>
         </div>
       </section>
     </main>
 
+    <!-- PIE DE PAGINA -->
     <footer>
-      <h2>ZOOBEAR ZOOLOGICO</h2>
+      <p class="text-center">© 2023 ZOOBEAR ZOOLOGICO - Todos los derechos reservados.</p>
     </footer>
+
+
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
 

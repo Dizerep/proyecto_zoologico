@@ -1,37 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primario: #EDF1D6;
+    --color-secundario: #9DC08B;
+    --color-terciario: #609966;
+    --color-cuaternario: #40513B;
+    --color-quintario: #2B3A2F;
+}
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Aqui empieza vista inicio */
 body {
-    background-color: blanchedalmond;
+    background-color: var(--color-primario);
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-    text-align: right;
-    background-color: brown;
-    color: rgb(255, 197, 197);
+
+/************** ( ' Header y Navegacion ' ) **************/
+.container-titulo{
+    background-color: var(--color-cuaternario);
+    height: 50px;
+}
+
+.nombre-sitio {
+    color: var(--color-primario);
     font-size: 25px;
-}
-
-h2{
-    color: #000;
-}
-
-span{
-    color: rgb(33, 125, 24);
-}
-
-header h2 {
-    color: rgb(44, 34, 0);
-    font-size: 30px;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 
-nav li {
-    display: inline-block;
+@media (min-width: 768px) {
+
+    .nombre-sitio{
+        font-size: 35px;
+    }
+    .contianer-titulo{
+        height: 70px;
+    }
+    
+}
+
+
+.title-zoobear{
+    font-family: 'Alfa Slab One', cursive;
 }
 
 .imagen_header{
@@ -39,25 +59,58 @@ nav li {
     height: 120px;
 }
 
-.imagen_slider{
-    width: 100vw; /* Ancho */ 
-/*     height: 300px;  /* Alto */ 
+.imagen_header:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
-.title_section_2{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: rgb(50, 117, 42);
+
+/* IMAGEN SLIDER - HERO */
+.imagen-slider{
+    width: 100vw; 
+    max-height: 500px;
 }
+
+/************** ( 'PAGE INDEX ' ) **************/
+.container-seccion-principal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .container-seccion-principal{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* SECTION ZOO TUNJA */
+
+.zoo-de-tunja {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+}
+
+.title-zoo-de-tunja{
+    font-size: 30px;
+    color: var(--color-cuaternario);
+}
+
+.horarios-especiales{
+    background-color: var(--color-quintario);
+    border-radius: 10px;
+}
+
+.title-horarios-especiales{
+    font-size: 30px;
+    color: var(--color-primario);
+}
+
 
 .tittle_section_3 {
     margin-top: 30px;
-}
-
-.text_section_3{
-    /* width: ; */
 }
 
 .tittle_section_3{
@@ -66,20 +119,6 @@ nav li {
     margin-top: 30px;
     margin-bottom: 10px;
     color: rgb(50, 117, 42);
-}
-
-.text_section_2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/*Box Model*/
-
-.Zoo-de-Tunja {
-    background-color: rgb(30, 226, 226);
-    width: 600px;
-    padding: 30px;
-    margin: 0 auto;
 }
 
 
@@ -91,41 +130,6 @@ nav li {
 }
 
 
-/* Display inline y block */
-
-/* Globales */
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-
-.contenedor {
-    max-width: 1200px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-}
-
-/* Header y Navegacion */
-
-.nombre-sitio {
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.contenedor-navegacion {
-    border-top: 1px solid #e1e1e1;
-}
-
-.lista-nav {
-    padding: 20 0;
-    display: flex;
-    justify-content: space-between;
-}
-
 .lista-nav {
     border-color: #000;
     border-top-style: solid;
@@ -135,37 +139,41 @@ a{
 }
 
 
-/* Aqui empieza vista Zoo */
 
-.imagen_zoo_Tunja2{
-    width: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-    display:block
-}
-
-.imagen_Horarios3{
-    width: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-    display:block
-}
+/************** ( 'PAGE ZOO ' ) **************/
 
 .imagen_section_1_zoo{
-    width: 100vw;
+    max-height: 800px;
+    width: 100%;
+}
+.section_zoo_1{
+    max-width: 1200px;
+    margin: 50px auto;
 }
 
-.text_zoo_section1{
-    text-align: center;
-    color: rgb(24, 24, 152);
-    margin-top: 10px;
-    margin-bottom: 10px;
+.title-text-gallery{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.img-gallery{
+    border-radius: 10px;
+}
+
+
+/* 
 .leon_zoo_section1{
     width: 1000px;
     height: 500px;
-}
+} */
+
+
+
+
+
+
+
+
 
 
 /* Aqui empieza vista Servicios */
@@ -256,7 +264,5 @@ a{
     gap: 20px;
 }
 
-.Secciones-principal{
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-}
+
+
