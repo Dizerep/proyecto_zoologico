@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+
+main {
+
+    .section_1_zoo{
+        .imagen_section_1_zoo {
+            max-height: 500px;
+            width: 100%;
+        }
+    
+        .section_zoo_1 {
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        
+    }
+    
+}
+
+.img-gallery{
+    border-radius: 10px;
+}

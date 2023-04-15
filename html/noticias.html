@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+
+        <!--Para trabajar CSS luego de tener el HTML, se debe enlazar la hoja de estilos al HTML de esta manera, colocando la ruta ./css/archivo.css -->
+        <!--  <link rel="stylesheet" href="CSS/normalize.css" /> -->
+
+        <!-- PARA TRABAJAR CON SASS SE CREA EL PROYECTO DE SASS CON SU ESTRUCTURA CORRESPONIENTE , SE COMPILA Y SE LINKEA EL ARCHIVO CSS GENERADO DESDE SASS -->
+        <link rel="stylesheet" href="../scss/app.css" />
+        <title>Noticias - ZooBear</title>
+    </head>
+    <body>
+        <header>
+            <div
+                class="container-titulo d-flex justify-content-center align-items-center justify-content-md-end"
+            >
+                <h1 class="nombre-sitio">🐼Zoologico de Tunja🐵</h1>
+            </div>
+            <!-- BARRA DE NAVEGACION -->
+        
+            <div
+                class="container_logo d-flex flex-column-reverse align-items-center"
+            >
+                <h2 class="title-zoobear">Zoo<span>Bear</span></h2>
+                <a href="../index.html">
+                    <img
+                    class="imagen_header"
+                    src="../Img/oso de anteojos.png"
+                    alt="logo_oso_de_anteojos"
+                  />
+                </a>
+            </div>
+        
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarNavAltMarkup"
+                        >
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="../index.html"
+                                    >INICIO</a
+                                >
+                                <a class="nav-link" href="./zoo.html"
+                                    >ZOO</a
+                                >
+                                <a class="nav-link" href="./servicios.html"
+                                    >SERVICIOS</a
+                                >
+                                <a class="nav-link" href="./noticias.html"
+                                    >NOTICIAS</a
+                                >
+                                <a class="nav-link" href="./contacto.html"
+                                    >CONTACTO</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="titulo-categoria-servicios">Sección Noticias</h1>
+            <p class="introduccion-servicios">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis repudiandae ratione eligendi veritatis earum
+                cupiditate consequuntur placeat ad quae minus explicabo, fugiat
+                sunt aut praesentium laudantium, porro, debitis doloribus
+                consectetur!
+            </p>
+
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Últimas noticias</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img
+                                src="../Img/noteice1.jpg"
+                                class="card-img-top"
+                                alt="zebra en el centro de seul"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    ANIMALES Una cebra se pasea por las calles
+                                    de Seúl
+                                </h5>
+                                <p class="card-text">
+                                    En Seúl, una cebra se paseó libremente por
+                                    las calles tras escaparse de un zoológico.
+                                    El personal del zoológico le administró al
+                                    animal siete dosis de relajantes musculares
+                                    antes de subirlo a un vehículo para llevarlo
+                                    de vuelta al lugar desde donde se fugó.
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img
+                                src="../Img/noteice2.jpg"
+                                class="card-img-top"
+                                alt="toruga en peligro de extincion"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Una tortuga en peligro de extinción logra procrear tres crías... a los 90 años</h5>
+                                <p class="card-text">
+                                  Mr. Pickles, una tortuga de 90 años, sorprendió al personal del zoológico de Houston al engendrar tres crías. Y sí, fue toda una hazaña.
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img
+                              src="../Img/noteice3.jpg"
+                                class="card-img-top"
+                                alt="perro"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Esta es la nueva raza de perro favorita de Estados Unidos (y no, no es el labrador retriever)</h5>
+                                <p class="card-text">
+                                  El bulldog francés ha ido escalando posiciones en la clasificación del AKC a lo largo de las últimas décadas, hasta alcanzar el puesto 14 en 2012. En 2021, la raza ocupaba el segundo lugar, por detrás de los populares labradores pero por delante de los golden retriever. <br><br>
+
+                                  Después de todo, ¿quién puede resistirse a sus adorables orejas de murciélago y su nariz arrugada? Esta raza se ha convertido en una de las favoritas de los famosos, adorada por todos, desde Reese Witherspoon hasta Megan Thee Stallion.
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img
+                                src="../Img/noteice4.jpg"
+                                class="card-img-top"
+                                alt="pinguino"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Pingüinos ancianos con cataratas reciben tratamiento exitoso por primera vez en el mundo</h5>
+                                <p class="card-text">
+                                  Tres pingüinos rey ancianos fueron operados de cataratas con lentes oculares hechos a la medida, en lo que se considera una intervención pionera en el mundo para mejorar su visión, según un zoológico de Singapur. <br><br>
+
+                                  En un comunicado hecho público este martes, los veterinarios del Mandai Wildlife Group declararon que las aves formaban parte de un grupo de seis pingüinos ancianos operados de cataratas hace dos meses y que desde entonces se han recuperado totalmente.
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="text-center">
+                © 2023 ZOOBEAR ZOOLOGICO - Todos los derechos reservados.
+            </p>
+        </footer>
+    </body>
+</html>

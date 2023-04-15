@@ -1,0 +1,26 @@
+/************** ( 'FONTS' ) **************/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+$monserrat: 'Montserrat', sans-serif;
+$alfa-slab: 'Alfa Slab One', cursive;
+
+/************** ( 'Colores' ) **************/
+$color-primario: #edf1d6;
+$color-secundario: #9dc08b;
+$color-terciario: #609966;
+$color-cuaternario: #40513b;
+$color-quintario: #2b3a2f;
+$color-sextario: #32752a;
+$color-septario: #9fe6ba;
+
+$color-black: #000;
+
+
+// Tamaños de Media Queries
+
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopxl: 1200px;

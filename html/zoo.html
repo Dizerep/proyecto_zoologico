@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+
+        <!--Para trabajar CSS luego de tener el HTML, se debe enlazar la hoja de estilos al HTML de esta manera, colocando la ruta ./css/archivo.css -->
+        <!--  <link rel="stylesheet" href="CSS/normalize.css" /> -->
+
+        <!-- PARA TRABAJAR CON SASS SE CREA EL PROYECTO DE SASS CON SU ESTRUCTURA CORRESPONIENTE , SE COMPILA Y SE LINKEA EL ARCHIVO CSS GENERADO DESDE SASS -->
+        <link rel="stylesheet" href="../scss/app.css" />
+        <title>Sobre Nosotros - ZooBear</title>
+    </head>
+
+    <body>
+        <!-- ETIQUETA HEADER DE LA WEB DENTRO CONTIENE LA BARRA DE NAVEGACION Y EL TITULO H1 -->
+
+        <header>
+            <div
+                class="container-titulo d-flex justify-content-center align-items-center justify-content-md-end"
+            >
+                <h1 class="nombre-sitio">🐼Zoologico de Tunja🐵</h1>
+            </div>
+            <!-- BARRA DE NAVEGACION -->
+        
+            <div
+                class="container_logo d-flex flex-column-reverse align-items-center"
+            >
+                <h2 class="title-zoobear">Zoo<span>Bear</span></h2>
+                <a href="../index.html">
+                    <img
+                    class="imagen_header"
+                    src="../Img/oso de anteojos.png"
+                    alt="logo_oso_de_anteojos"
+                  />
+                  </a>
+            </div>
+        
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarNavAltMarkup"
+                        >
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="../index.html"
+                                    >INICIO</a
+                                >
+                                <a class="nav-link" href="./zoo.html"
+                                    >ZOO</a
+                                >
+                                <a class="nav-link" href="./servicios.html"
+                                    >SERVICIOS</a
+                                >
+                                <a class="nav-link" href="./noticias.html"
+                                    >NOTICIAS</a
+                                >
+                                <a class="nav-link" href="./contacto.html"
+                                    >CONTACTO</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- SECC -->
+        <main>
+            <!-- PARTE SUPERIOR GALERIA -->
+            <section class="section_1_zoo">
+                <img
+                    class="imagen_section_1_zoo"
+                    src="../Img/Zoo_imagen.png"
+                    alt="imagen zoo"
+                />
+                <div class="p-4 title-text-gallery">
+                    <h2 class="text-center">
+                        El Zoológico de Tunja: un tesoro natural que necesita
+                        nuestro apoyo
+                    </h2>
+                    <p>
+                        El Zoológico de Tunja es uno de los tesoros más
+                        preciados de la ciudad, no solo por su belleza natural y
+                        la fascinación que despierta en los visitantes, sino
+                        también por su invaluable papel en la conservación de la
+                        fauna y la educación ambiental. Este oasis verde es
+                        hogar de una gran variedad de especies, muchas de las
+                        cuales están en peligro de extinción, por lo que el
+                        zoológico tiene un papel vital en la protección y
+                        preservación de la biodiversidad de la región.
+                    </p>
+                    <p>
+                        Sin embargo, el Zoológico de Tunja enfrenta desafíos
+                        importantes para continuar su labor de conservación y
+                        educación. En un mundo cada vez más urbanizado y
+                        desconectado de la naturaleza, es fácil olvidar la
+                        importancia de proteger nuestro entorno y todas las
+                        especies que lo habitan. Pero el zoológico nos recuerda
+                        la necesidad de ser conscientes de nuestra relación con
+                        la naturaleza y la importancia de protegerla para las
+                        generaciones futuras.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center mb-4">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Xv-PElbaGR8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+
+            <!-- CUADRICULA IMAGENES -->
+            <p class="text-center fs-2 fw-bold">GALERIA</p>
+            <section class="section_zoo_1 row justify-content-center p-5">
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-gallery img-fluid" src="../Img/fiestas-infantiles.jpg" alt="" />
+                    <p class="text-center fw-bold mt-2">FIESTAS INFANTILES.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-gallery img-fluid" src="../Img/mitos y leyendas.jpg" alt="" />
+                    <p class="text-center fw-bold mt-2">MITOS Y LEYENDAS.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-gallery img-fluid" src="../Img/zoovacaciones.jpg" alt="" />
+                    <p class="text-center fw-bold mt-2">ZOOVACACIONES.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img
+                        class="img-gallery img-fluid"
+                        src="../Img/zootienda.jpg"
+                        alt=""
+                    />
+                    <p class="text-center fw-bold mt-2">ZOOTIENDA VIRTUAL.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-gallery img-fluid" src="../Img/eventos y recepciones.jpg" alt="" />
+                    <p class="text-center fw-bold mt-2">EVENTOS Y RECEPCIONES.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-gallery img-fluid" src="../Img/picnic salvaje.jpg" alt="" />
+                    <p class="text-center fw-bold mt-2">PICNIC SALVAJE.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- PIE DE PAGINA -->
+        <footer>
+            <p class="text-center">
+                © 2023 ZOOBEAR ZOOLOGICO - Todos los derechos reservados.
+            </p>
+        </footer>
+
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+<!-- esta es la estructura normal de un html -->
+<!-- header: es la parte superior de la pagina normalmente se ponen logo , la barra de navegacion y cosas de la parte superior de la web -->
+<!-- main: como su palabra lo dice es la parte principal de la web -->
+<!-- footer es el pie de pagina de las webs donde se ponen derechos reservados links etc -->
+
+<!-- esta estructura es semantica , no es obligatoria pero es lo mas recomendable usar  -->

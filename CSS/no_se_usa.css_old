@@ -1,0 +1,198 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primario: #EDF1D6;
+    --color-secundario: #9DC08B;
+    --color-terciario: #609966;
+    --color-cuaternario: #40513B;
+    --color-quintario: #2B3A2F;
+    --color-sextario: #32752a;
+    --color-septario: #9fe6ba;
+
+    --color-black: #000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-primario);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+
+/* Aqui empieza vista inicio */
+
+/************** ( ' Header y Navegacion ' ) **************/
+/* .container-titulo{
+    background-color: var(--color-cuaternario);
+    height: 50px;
+} */
+
+/* .nombre-sitio {
+    color: var(--color-primario);
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
+} */
+
+
+/* @media (min-width: 768px) {
+
+    .nombre-sitio{
+        font-size: 35px;
+    }
+    .contianer-titulo{
+        height: 70px;
+    } 
+} */
+
+
+/* .title-zoobear{
+    font-family: 'Alfa Slab One', cursive;
+} */
+/* 
+.imagen_header{
+    width: 120px;
+    height: 120px;
+}
+
+.imagen_header:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+ */
+
+/* IMAGEN SLIDER - HERO */
+/* .imagen-slider{
+    width: 100vw; 
+    max-height: 500px;
+} */
+
+/************** ( 'PAGE INDEX ' ) **************/
+/* .container-seccion-principal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+} */
+
+/* @media (min-width: 768px) {
+    .container-seccion-principal{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+
+/* .zoo-de-tunja {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+} */
+
+/* .title-zoo-de-tunja{
+    font-size: 30px;
+    color: var(--color-cuaternario);
+} */
+
+/* .horarios-especiales{
+    background-color: var(--color-quintario);
+    border-radius: 10px;
+}
+ */
+/* .title-horarios-especiales{
+    font-size: 30px;
+    color: var(--color-primario);
+} */
+
+
+/* .tittle_section_3 {
+    margin-top: 30px;
+} */
+
+
+
+
+/************** ( 'PAGE ZOO ' ) **************/
+
+/* .imagen_section_1_zoo{
+    max-height: 800px;
+    width: 100%;
+}
+.section_zoo_1{
+    max-width: 1200px;
+    margin: 50px auto;
+} */
+
+/* .title-text-gallery{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+/* 
+.img-gallery{
+    border-radius: 10px;
+} */
+
+
+
+
+
+/* Aqui empieza vista Servicios */
+
+
+/* .titulo-categoria-servicios{
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    font-size: 30px;
+} */
+
+/* .introduccion-servicios{
+    padding: 30px;
+} */
+
+/* .services-imgs-container{
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+
+
+/* Aqui empieza vista Contacto */
+
+/* .contact-description{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+}
+
+.form-contacto{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+
+} */
+
+
+
+
+/* FOOTER */
+/* footer{
+    background-color: var(--color-cuaternario);
+    padding: 20px;
+    color: var(--color-primario);
+    text-align: center;
+} */

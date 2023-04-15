@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.imagen-slider{
+    width: 100vw; 
+    max-height: 500px;
+}
+
+.container-seccion-principal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .horarios-especiales{
+        background-color: v.$color-quintario;
+        border-radius: 10px;
+
+        .title-horarios-especiales{
+            font-size: 30px;
+            color: v.$color-primario;
+        }
+    }
+
+    .zoo-de-tunja {
+        background-color: v.$color-secundario;
+        border-radius: 10px;
+
+        .title-zoo-de-tunja{
+            font-size: 30px;
+            color: v.$color-primario;
+        }
+    }
+    
+}

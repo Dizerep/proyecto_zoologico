@@ -1,0 +1,53 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+header {
+    .container-titulo {
+        background-color: v.$color-cuaternario;
+        height: 50px;
+
+        .nombre-sitio {
+            color: v.$color-primario;
+            font-size: 25px;
+            font-family: v.$alfa-slab;
+            @include m.tablet {
+                font-size: 35px;
+            }
+        }
+
+        @include m.tablet {
+            height: 70px;
+        }
+    }
+
+    .container_logo {
+        .title-zoobear {
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+        .imagen_header {
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            animation: bounce 1s normal;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

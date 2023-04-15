@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+        <!--Para trabajar CSS luego de tener el HTML, se debe enlazar la hoja de estilos al HTML de esta manera, colocando la ruta ./css/archivo.css -->
+        <!-- <link rel="stylesheet" href="CSS/normalize.css" /> -->
+
+        <!-- PARA TRABAJAR CON SASS SE CREA EL PROYECTO DE SASS CON SU ESTRUCTURA CORRESPONIENTE , SE COMPILA Y SE LINKEA EL ARCHIVO CSS GENERADO DESDE SASS -->
+        <link rel="stylesheet" href="./scss/app.css" />
+        <title>Inicio - ZooBear</title>
+    </head>
+
+    <body>
+        <!-- ETIQUETA HEADER DE LA WEB DENTRO CONTIENE LA BARRA DE NAVEGACION Y EL TITULO H1 -->
+        <header>
+            <div
+                class="container-titulo d-flex justify-content-center align-items-center justify-content-md-end"
+            >
+                <h1 class="nombre-sitio">🐼Zoologico - de Tunja🐵</h1>
+            </div>
+            <!-- BARRA DE NAVEGACION -->
+
+            <div
+                class="container_logo d-flex flex-column-reverse align-items-center"
+            >
+                <h2 class="title-zoobear">Zoo<span>Bear</span></h2>
+                <a href="./index.html">
+                    <img
+                    class="imagen_header"
+                    src="Img/oso de anteojos.png"
+                    alt="logo_oso_de_anteojos"
+                />
+                </a>
+            </div>
+
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarNavAltMarkup"
+                        >
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="./index.html"
+                                    >INICIO</a
+                                >
+                                <a class="nav-link" href="./html/zoo.html"
+                                    >ZOO</a
+                                >
+                                <a class="nav-link" href="./html/servicios.html"
+                                    >SERVICIOS</a
+                                >
+                                <a class="nav-link" href="./html/noticias.html"
+                                    >NOTICIAS</a
+                                >
+                                <a class="nav-link" href="./html/contacto.html"
+                                    >CONTACTO</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- SECCION DEL SLIDER -->
+            <section class="section_1">
+                <img
+                    class="imagen-slider"
+                    src="Img/osodeanteojos.jpg"
+                    alt="Foto de oso de anteojos"
+                />
+            </section>
+
+            <!-- PRIMERA SECCION -->
+
+            <div class="container-seccion-principal p-3">
+                <section
+                    class="horarios-especiales p-3 d-flex flex-column align-items-center justify-content-center"
+                >
+                    <h3
+                        class="title-horarios-especiales fs-3 text-center fw-bold my-3"
+                    >
+                        Horarios especiales para la observacion de especies
+                    </h3>
+                    <p class="text-center text-white">
+                        Si eres un amante de los animales y la naturaleza, te
+                        encantará saber que muchos zoológicos ofrecen horarios
+                        especiales para la observación de especies. Estos
+                        horarios te permiten ver a los animales en sus momentos
+                        más activos y disfrutar de su comportamiento natural. En
+                        algunos casos, también puedes tener acceso a áreas
+                        restringidas para ver a los animales de cerca e incluso
+                        interactuar con ellos en un entorno seguro y controlado.
+                        Además, estos horarios especiales suelen ser menos
+                        concurridos.
+                    </p>
+                    <img
+                        class="img-fluid"
+                        src="Img/Horarios de especies.jpg"
+                        alt="Imagen Zoo de Tunja"
+                    />
+                </section>
+
+                <section
+                    class="zoo-de-tunja p-3 d-flex flex-column align-items-center justify-content-center"
+                >
+                    <h3
+                        class="title-zoo-de-tunja fs-3 text-center fw-bold my-3"
+                    >
+                        Zoo de Tunja Boyacá
+                    </h3>
+                    <p class="text-center">
+                        El Zoologico de Tunja es un lugar fascinante que alberga
+                        una gran variedad de animales de todo el mundo. Aquí
+                        podrás encontrar desde criaturas pequeñas y lindas hasta
+                        grandes y majestuosas, todas viviendo en ambientes
+                        diseñados especialmente para ellas. Además, el zoológico
+                        ofrece una experiencia educativa única para toda la
+                        familia, donde podrás aprender sobre la diversidad de la
+                        vida animal y la importancia de la conservación de la
+                        naturaleza. Ven a explorar el Zoologico de Tunja y
+                        descubre el maravilloso mundo de los animales.
+                    </p>
+                    <img
+                        class="img-fluid"
+                        src="Img/Zoo de Tunja.jpg"
+                        alt="Imagen Zoo de Tunja"
+                    />
+                </section>
+            </div>
+
+            <!-- MAS INFO  -->
+            <section class="d-md-flex gap-5 justify-content-center">
+                <div>
+                    <h4 class="text-center">CÓMO LLEGAR A ZOOBEAR</h4>
+                    <p class="text-center">Carrera 10 # 5a - 26</p>
+                </div>
+                <div>
+                    <h4 class="text-center">INFORMACION PARA VISITANTES</h4>
+                    <p class="text-center">Carrera 45 # 8 - 49</p>
+                </div>
+                <!-- <h4>MAPA DEL ZOOLOGICO</h4> -->
+            </section>
+        </main>
+
+        <!-- PIE DE PAGINA -->
+        <footer>
+            <p class="text-center">
+                © 2023 ZOOBEAR ZOOLOGICO - Todos los derechos reservados.
+            </p>
+        </footer>
+
+        <script src="./js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+<!-- esta es la estructura normal de un html -->
+<!-- header: es la parte superior de la pagina normalmente se ponen logo , la barra de navegacion y cosas de la parte superior de la web -->
+<!-- main: como su palabra lo dice es la parte principal de la web -->
+<!-- footer es el pie de pagina de las webs donde se ponen derechos reservados links etc -->
+
+<!-- esta estructura es semantica , no es obligatoria pero es lo mas recomendable usar  -->
+

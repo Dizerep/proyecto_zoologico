@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+
+main {
+
+    .titulo-categoria-servicios {
+        text-align: center;
+        max-width: 1000px;
+        margin: 40px auto 0 auto;
+        font-size: 30px;
+    }
+
+    .introduccion-servicios{
+        padding: 30px;
+    }
+
+    .services-imgs-container{
+        max-width: 1000px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
